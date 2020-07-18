@@ -1,0 +1,25 @@
+The purpose of this web app is to be able to read an image reference from 
+a Firebase DB, and using the reference, find the corrisponding image in
+the Firebase Storage. Once the image is found, it takes the URL of the image
+and displays it on the webpage.  
+
+If you decide to connect your own Firebase, you will need to change the 
+credentials in "app.js" 
+
+Here's a list of the files and their purpose:
+    - index.php: Dynamically lays out the webpage for easy expansion 
+                 and deployment with Heroku using the PHP buildpack
+    - header.html: Contains the head, title, and css link all pages need
+    - landing.html: Contains the content of the page 
+    - footer.html: Contains the links to the Firebase Libraries, JQuery, 
+                   and the local Javascript files
+    - style.css: Styling for the webpage
+    - app.js: Connects the app to the Firebase and carries out a set of 
+              instructions such as retreiving the image reference, and searching the Storage
+              for it to then get and display the image through a URL link. 
+
+You can find a live deployment of the site here: 
+https://firebase-image-receive.herokuapp.com/
+
+And the partner site, which sends the image here: 
+https://firebase-image-send.herokuapp.com/
